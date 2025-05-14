@@ -1,13 +1,7 @@
 import { Button } from "@/components/ui/button.tsx";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import {
-  MapPin,
-  Instagram,
-  PhoneCall,
-  MessageCircle,
-  Link,
-} from "lucide-react";
+import { MapPin, Instagram, PhoneCall, MessageCircle } from "lucide-react";
 import { useEffect, useState } from "react";
 
 function Home() {
@@ -89,7 +83,6 @@ function Home() {
             <div className="w-10 h-2 bg-yellow-500 mx-1"></div>
             <div className="w-10 h-2 bg-yellow-500 mx-1"></div>
           </div>
-
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-12">
             {[
               "Auto Elétrico",
@@ -122,12 +115,14 @@ function Home() {
             ))}
           </div>
           <div className="flex justify-center mt-8">
-            <Link
-              to="/Servicos"
-              className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105"
+            <a
+              href="/servicos"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-10 inline-block  text-black px-6 py-2 bg-yellow-500 hover:bg-yellow-600  font-bold  rounded-full shadow-lg transition duration-300 transform hover:scale-105"
             >
-              Nossos Serviços
-            </Link>
+              Nossos Serviço
+            </a>
           </div>
         </div>
 
