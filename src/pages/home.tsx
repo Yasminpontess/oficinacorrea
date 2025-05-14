@@ -33,7 +33,7 @@ function Home() {
       <section
         className="relative w-full h-screen bg-cover bg-center flex flex-col justify-center items-center text-center px-4 sm:px-6"
         style={{
-          backgroundImage: "url('src/assets/imagens/mustang6.jpg')",
+          backgroundImage: "url('public/imagem/mustang6.jpg')",
         }}
       >
         <div className="absolute inset-0  bg-gray-950/70 bg-opacity-20 z-0"></div>
