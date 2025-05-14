@@ -13,11 +13,11 @@ function Home() {
   });
 
   const avaliacoes = [
-    "src/assets/imagens/avaliacao1.png",
-    "src/assets/imagens/avaliacao2.png",
-    "src/assets/imagens/avaliacao3.png",
-    "src/assets/imagens/avaliacao4.png",
-    "src/assets/imagens/avaliacao5.png",
+    "/imagens/avaliacao1.png",
+    "/imagens/avaliacao2.png",
+    "/imagens/avaliacao3.png",
+    "/imagens/avaliacao4.png",
+    "/imagens/avaliacao5.png",
   ];
 
   useEffect(() => {
@@ -33,7 +33,7 @@ function Home() {
       <section
         className="relative w-full h-screen bg-cover bg-center flex flex-col justify-center items-center text-center px-4 sm:px-6"
         style={{
-          backgroundImage: "url('public/imagem/mustang6.jpg')",
+          backgroundImage: "url('/imagens/mustang6.jpg')",
         }}
       >
         <div className="absolute inset-0  bg-gray-950/70 bg-opacity-20 z-0"></div>
