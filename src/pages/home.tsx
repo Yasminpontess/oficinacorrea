@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { MapPin, Instagram, PhoneCall, MessageCircle } from "lucide-react";
 import { useEffect, useState } from "react";
+import CarrosselMarcas from "@/components/carrosselmarcas/CarrosselMarcas";
 
 function Home() {
   const [index, setIndex] = useState(0);
@@ -55,7 +56,6 @@ function Home() {
           style={{ clipPath: "polygon(0% 50%, 100% 0%, 100% 100%, 0% 100%)" }}
         ></div>
       </section>
-
       <div className="w-screen flex flex-col items-center bg-black">
         <div className="w-full flex justify-center items-center mt-24 px-4 mb-12mt-24 mb-24 relative z-10">
           <div className="bg-neutral-600/30 backdrop-blur-md p-10 rounded-xl z-5 max-w-2xl w-full border border-white/10 shadow-lg text-white text-center">
@@ -132,7 +132,14 @@ function Home() {
           style={{ clipPath: "polygon(0% 0%, 100% 50%, 100% 100%, 0% 100%)" }}
         ></div>
       </div>
+      <div>
+        {/* Outros componentes da Home */}
 
+        <CarrosselMarcas />
+
+        {/* Outros conteúdos */}
+      </div>
+      );
       <section
         className="w-full bg-black text-white py-20 relative overflow-hidden"
         ref={ref}
@@ -201,9 +208,7 @@ function Home() {
           </div>
         </motion.div>
       </section>
-
       <div className="w-full h-5 bg-yellow-500"></div>
-
       <section className="w-full bg-black text-white py-20">
         <div className="max-w-4xl mx-auto px-4 text-center relative">
           <h2 className="text-3xl font-bold mb-6">AVALIAÇÕES DOS CLIENTES</h2>
@@ -238,9 +243,7 @@ function Home() {
           </a>
         </div>
       </section>
-
       <div className="w-full h-5 bg-yellow-500"></div>
-
       <section
         className="w-full h-screen flex flex-col justify-center items-center text-white text-center p-6 relative bg-cover bg-center"
         style={{
@@ -268,12 +271,10 @@ function Home() {
           </a>
         </div>
       </section>
-
       <div
         className="w-full h-24 bg-yellow-500"
         style={{ clipPath: "polygon(0% 0%, 100% 100%, 100% 0%, 100% 0%)" }}
       ></div>
-
       <div className="bg-black py-10 px-4 text-center ">
         <h2 className="text-2xl text-amber-50 font-bold mb-2">
           Siga a gente nas redes sociais!
@@ -317,7 +318,6 @@ function Home() {
         className="w-full h-24 bg-yellow-500"
         style={{ clipPath: "polygon(0% 0%, 50% 50%, 100% 100%, 0% 100%)" }}
       ></div>
-
       <section className="w-full bg-black text-white py-20 flex flex-col md:flex-row items-center justify-center px-10">
         {/* Mapa ocupando a metade direita */}
         <div className="w-full md:w-4/12 h-96 md:max-h-11/12">

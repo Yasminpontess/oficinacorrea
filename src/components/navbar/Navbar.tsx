@@ -30,7 +30,7 @@ function Navbar() {
 
           <a
             href="https://wa.me/5511992402147"
-            className="bg-amber-400 text-black px-4 py-2 rounded-lg hover:bg-amber-500 transition duration-200 text-sm font-semibold"
+            className="bg-amber-400 text-black font-bold px-4 py-2 rounded-lg hover:bg-amber-500 transition duration-200 text-sm "
           >
             Agende nossos serviços
           </a>
