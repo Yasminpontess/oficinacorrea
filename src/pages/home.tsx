@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button.tsx";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-
 import {
   MapPin,
   Instagram,
@@ -35,38 +34,28 @@ function Home() {
   }, []);
 
   return (
-    <div className="w-screen flex flex-col items-center bg-black ">
+    <div className="w-full flex flex-col items-center bg-black overflow-x-hidden">
       <section
-        className="relative w-full h-screen bg-cover bg-center flex flex-col justify-center items-center text-center px-4 sm:px-6"
+        className="relative w-full min-h-screen bg-cover bg-center flex flex-col justify-center items-center text-center px-4 sm:px-6"
         style={{
           backgroundImage: "url('/imagens/mustang6.jpg')",
         }}
       >
-        <div className="absolute inset-0  bg-gray-950/70 bg-opacity-20 z-0"></div>
-
-        {/* Conteúdo central */}
-        <div className="relative z-10 max-w-4xl">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-yellow-500 drop-shadow-lg tracking-wide">
-            <span
-              className="text-yellow-500"
-              style={{ textShadow: "2px 2px 5px black" }}
-            >
+        <div className="absolute inset-0 bg-gray-950/70 z-0"></div>
+        <div className="relative z-10 max-w-4xl w-full">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-yellow-500 drop-shadow-lg tracking-wide text-center">
+            <span style={{ textShadow: "2px 2px 5px black" }}>
               OFICINA CORRÊA 83
             </span>
           </h1>
-
           <div className="my-4 border-t-4 border-white w-3/4 mx-auto"></div>
-
           <p
-            className="text-xl sm:text-2xl md:text-3xl text-yellow-400 tracking-widest"
+            className="text-lg sm:text-xl font-bold md:text-2xl lg:text-3xl text-yellow-400 tracking-widest"
             style={{ textShadow: "1px 1px 4px black" }}
           >
             AUTO ELÉTRICO, INJEÇÃO ELETRÔNICA
           </p>
         </div>
-
-        {/* Faixa decorativa amarela no rodapé do banner */}
-
         <div
           className="absolute bottom-0 left-0 w-full h-24 bg-yellow-500 z-0"
           style={{ clipPath: "polygon(0% 50%, 100% 0%, 100% 100%, 0% 100%)" }}
