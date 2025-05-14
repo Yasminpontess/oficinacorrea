@@ -2,7 +2,13 @@ import { Button } from "@/components/ui/button.tsx";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-import { MapPin, Instagram, PhoneCall, MessageCircle } from "lucide-react";
+import {
+  MapPin,
+  Instagram,
+  PhoneCall,
+  MessageCircle,
+  Link,
+} from "lucide-react";
 import { useEffect, useState } from "react";
 
 function Home() {
@@ -114,7 +120,7 @@ function Home() {
                 transition={{ duration: 0.5, delay: index * 0.2 }}
               >
                 <img
-                  src={`src/assets/imagens/${titulo
+                  src={`/imagens/${titulo
                     .toLowerCase()
                     .replace(/ /g, "_")}.jpg`}
                   alt={titulo}
@@ -127,12 +133,12 @@ function Home() {
             ))}
           </div>
           <div className="flex justify-center mt-8">
-            <a
-              href="/Servicos"
+            <Link
+              to="/Servicos"
               className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105"
             >
               Nossos Serviços
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -147,7 +153,7 @@ function Home() {
         className="w-full bg-black text-white py-20 relative overflow-hidden"
         ref={ref}
         style={{
-          backgroundImage: "url('src/assets/imagens/Design sem nome (4).png')",
+          backgroundImage: "url('/imagens/Design sem nome (4).png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundBlendMode: "overlay",
@@ -163,12 +169,12 @@ function Home() {
           {/* Imagens */}
           <div className="w-full md:w-1/2 flex justify-center md:justify-start items-start flex-wrap gap-4">
             <img
-              src="src/assets/imagens/ygor.jpg"
+              src="/imagens/ygor.jpg"
               alt="Oficina"
               className="rounded-lg w-50 h-64 object-cover shadow-lg -mt-4"
             />
             <img
-              src="src/assets/imagens/vds.jpg"
+              src="/imagens/vds.jpg"
               alt="Carros na oficina"
               className="rounded-lg w-50 h-64 object-cover shadow-lg mt-6"
             />
@@ -254,7 +260,7 @@ function Home() {
       <section
         className="w-full h-screen flex flex-col justify-center items-center text-white text-center p-6 relative bg-cover bg-center"
         style={{
-          backgroundImage: "url('src/assets/imagens/mecanica.jpg')",
+          backgroundImage: "url('/imagens/mecanica.jpg')",
         }}
       >
         <div className="bg-black/40 backdrop-blur-md p-10 rounded-lg text-white max-w-2xl w-full">
@@ -320,11 +326,7 @@ function Home() {
 
         {/* Feed do Instagram embutido */}
         <div className="flex justify-center">
-          <img
-            src="src/assets/imagens/instagram.jpg"
-            alt="feed"
-            className=" h-100"
-          />
+          <img src="/imagens/instagram.jpg" alt="feed" className=" h-100" />
         </div>
       </div>
       <div

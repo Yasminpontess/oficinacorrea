@@ -112,7 +112,7 @@ function Servicos() {
           >
             {/* Imagem da categoria */}
             <img
-              src={`src/assets/imagens/${categoria.imagem}`}
+              src={`/imagens/${categoria.imagem}`}
               alt={categoria.titulo}
               className="w-full h-72 object-cover rounded-lg shadow-md"
             />

@@ -11,7 +11,7 @@ function Footer() {
         {/* Logo e descrição */}
         <div className="w-full md:w-1/3 flex flex-col justify-center items-center text-center">
           <img
-            src="src/assets/imagens/logo oficial.jpg"
+            src="/imagens/logo oficial.jpg"
             alt="Logo Corrêa"
             className="h-30 mb-4"
           />

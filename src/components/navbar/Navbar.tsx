@@ -6,7 +6,7 @@ function Navbar() {
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
         {/* Logo */}
         <img
-          src="src/assets/imagens/logo.jpg"
+          src="/imagens/logo.jpg"
           alt="logo"
           className="h-12 w-auto mb-4 md:mb-0"
         />

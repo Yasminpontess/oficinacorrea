@@ -14,11 +14,7 @@ const App = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img
-          src="src/assets/imagens/whatsapp.png"
-          alt="WhatsApp"
-          className="w-10 h-10"
-        />
+        <img src="/imagens/whatsapp.png" alt="WhatsApp" className="w-10 h-10" />
         <span className="absolute top-1 right-1 w-3 h-3 bg-red-600 border-2 border-white rounded-full"></span>
       </a>
 
