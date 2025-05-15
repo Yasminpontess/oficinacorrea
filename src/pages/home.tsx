@@ -74,7 +74,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="max-w-6xl mx-auto px-6 w-full bg-black text-white py-20">
+        <div className="max-w-6xl mx-auto px-6 w-full bg-black text-white py-20 ">
           <h2 className="text-3xl font-bold text-center">
             NOSSAS ESPECIALIDADES
           </h2>
