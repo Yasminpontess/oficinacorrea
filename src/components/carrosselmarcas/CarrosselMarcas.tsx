@@ -16,7 +16,7 @@ const marcas = [
   { nome: "toyota", altura: "h-22" },
   { nome: "bmw", altura: "h-18" },
   { nome: "citroen", altura: "h-25" },
-  { nome: "audi", altura: "h-18" },
+  { nome: "audi", altura: "h-20" },
   { nome: "jeep", altura: "h-18" },
   { nome: "mercedes", altura: "h-18" },
   { nome: "ranger", altura: "h-18" },

@@ -205,43 +205,50 @@ function Home() {
         </motion.div>
       </section>
       <div className="w-full h-5 bg-yellow-500"></div>
-      <section className="w-full bg-black text-white py-30">
+      <section className="w-full bg-black text-white py-32">
+        {" "}
+        {/* antes era py-60 */}
         <div className="max-w-4xl mx-auto px-4 text-center relative">
-          <h2 className="text-3xl font-bold mb-6">AVALIAÇÕES DOS CLIENTES</h2>
-          <div className="relative w-full flex justify-center items-center">
+          <h2 className="text-3xl font-bold mb-2">AVALIAÇÕES DOS CLIENTES</h2>{" "}
+          {/* antes era mb-6 */}
+          <div className="relative w-full flex justify-center items-center mt-4">
             <button
               onClick={() =>
                 setIndex((index - 1 + avaliacoes.length) % avaliacoes.length)
               }
-              className="absolute left-[-60px]  text-black px-4 py-2 rounded-lg"
+              className="absolute left-[-60px] text-black px-4 py-2 rounded-lg"
             >
               ◀
             </button>
-            <img
-              src={avaliacoes[index]}
-              alt={`Avaliação ${index + 1}`}
-              className="rounded-lg shadow-lg max-h-[500px] object-contain transition-all duration-500"
-            />
+
+            <div className="w-full h-[400px] sm:h-[500px] max-w-[90vw] mx-auto flex items-center justify-center">
+              <img
+                src={avaliacoes[index]}
+                alt={`Avaliação ${index + 1}`}
+                className="max-w-full max-h-full object-contain rounded-lg shadow-lg transition-all duration-500"
+              />
+            </div>
+
             <button
               onClick={() => setIndex((index + 1) % avaliacoes.length)}
-              className="absolute right-[-60px]  text-black px-4 py-2 rounded-lg"
+              className="absolute right-[-60px] text-black px-4 py-2 rounded-lg"
             >
               ▶
             </button>
           </div>
           <a
-            href="https://www.google.com/search?sca_esv=896bc82726dbc1e3&hl=pt-BR&sxsrf=AHTn8zpIm_5iaR80p5TqZXBiCwNSHzd-cQ:1746729938580&si=APYL9bs7Hg2KMLB-4tSoTdxuOx8BdRvHbByC_AuVpNyh0x2KzcTeu0mY3xc1n77kYEL_MTtMPnyBXCNqdxt61Zb1j-MNJmp5yXXkFDvkc5kYRKocW56EMNyBvgFx3kFrGizrvieMlk3mzpjxJA5NRZqoD1gW-vT1qIhK0QK97oBGV8YuA8gWf78JYcD-ki5Wn9KNlU1exS06MHOMrHlGQNivnAGigxgd_YF38638IH4KYNj6pi4TrOrwQYIeok9i8m6DSHfygvui&q=Oficina+Corr%C3%AAa+83+Auto+El%C3%A9trico,+Inje%C3%A7%C3%A3o+Eletr%C3%B4nica,+ABS,+Diagn%C3%B3stico,+Mec%C3%A2nica+Geral.+Coment%C3%A1rios&sa=X&ved=2ahUKEwiTyYeMxJSNAxW-lZUCHQC0E4wQ0bkNegQIIhAD&biw=1536&bih=730&dpr=1.25"
+            href="https://www.google.com/search?... (seu link completo)"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-6 inline-block   bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105"
+            className="mt-6 inline-block bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105"
           >
             Ver todas as avaliações
           </a>
         </div>
       </section>
-      <div className="w-full h-5 bg-yellow-500"></div>
+      <div className=" w-full h-5 bg-yellow-500"></div>
       <section
-        className="w-full h-screen flex flex-col justify-center items-center text-white text-center p-6 relative bg-cover bg-center"
+        className=" w-full h-screen flex flex-col justify-center items-center text-white text-center p-6 relative bg-cover bg-center"
         style={{
           backgroundImage: "url('/imagens/mecanica.jpg')",
         }}
