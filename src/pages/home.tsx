@@ -132,12 +132,8 @@ function Home() {
           style={{ clipPath: "polygon(0% 0%, 100% 50%, 100% 100%, 0% 100%)" }}
         ></div>
       </div>
-      <div>
-        {/* Outros componentes da Home */}
-
+      <div className="w-full bg-black text-white py-15">
         <CarrosselMarcas />
-
-        {/* Outros conteúdos */}
       </div>
       );
       <section
@@ -152,7 +148,7 @@ function Home() {
         }}
       >
         <motion.div
-          className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 px-4 sm:px-6 relative z-10"
+          className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 px-8 sm:px-6 relative z-10"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 100 }}
           transition={{ duration: 1 }}
@@ -209,7 +205,7 @@ function Home() {
         </motion.div>
       </section>
       <div className="w-full h-5 bg-yellow-500"></div>
-      <section className="w-full bg-black text-white py-20">
+      <section className="w-full bg-black text-white py-30">
         <div className="max-w-4xl mx-auto px-4 text-center relative">
           <h2 className="text-3xl font-bold mb-6">AVALIAÇÕES DOS CLIENTES</h2>
           <div className="relative w-full flex justify-center items-center">

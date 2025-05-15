@@ -77,7 +77,7 @@ export default function CarrosselMarcas() {
   const grupoVisivel = marcas.slice(indice, indice + tamanhoGrupo);
 
   return (
-    <div className="w-full bg-black py-12 overflow-hidden">
+    <div className="w-full bg-black py-25 overflow-hidden">
       <h2 className="text-3xl font-bold text-center text-white mb-6 px-4 ">
         Trabalhamos com todas essas marcas
         <div className="flex justify-center mt-2 ">
@@ -98,18 +98,22 @@ export default function CarrosselMarcas() {
 
         <motion.div
           key={indice}
-          className="flex gap-6 sm:gap-8 md:gap-10 justify-center items-center"
+          className="flex gap-6 sm:gap-8 md:gap-10 justify-center items-center min-h-[100px]"
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.4 }}
         >
           {grupoVisivel.map((marca, index) => (
-            <img
+            <div
               key={index}
-              src={`/imagens/marcas/${marca.nome}.png`}
-              alt={marca.nome}
-              className={`${marca.altura} object-contain max-w-[100px] sm:max-w-[120px]`}
-            />
+              className="flex justify-center items-center h-24 w-28 sm:w-32 md:w-36"
+            >
+              <img
+                src={`/imagens/marcas/${marca.nome}.png`}
+                alt={marca.nome}
+                className={`${marca.altura} max-w-full object-contain`}
+              />
+            </div>
           ))}
         </motion.div>
 
