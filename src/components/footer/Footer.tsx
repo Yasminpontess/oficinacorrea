@@ -26,7 +26,7 @@ function Footer() {
         {/* Compania */}
         <div className="w-full md:w-1/3 flex justify-center text-sm">
           <div className="flex flex-col items-center">
-            <h3 className="font-bold text-xl mb-2">Compania</h3>
+            <h3 className="font-bold text-xl mb-2">Companhia</h3>
             <a
               href="/Sobre"
               target="_blank"
