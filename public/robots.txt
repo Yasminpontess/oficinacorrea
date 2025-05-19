@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.oficinacorrea83.com.br/sitemap.xml 
