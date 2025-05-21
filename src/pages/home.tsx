@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button.tsx";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { MapPin, Instagram, PhoneCall, MessageCircle } from "lucide-react";
@@ -7,7 +6,7 @@ import CarrosselMarcas from "@/components/carrosselmarcas/CarrosselMarcas";
 
 function Home() {
   const [index, setIndex] = useState(0);
-  const { ref, inView } = useInView({
+  const { ref } = useInView({
     triggerOnce: true,
     rootMargin: "-100px 0px",
   });
@@ -147,12 +146,7 @@ function Home() {
           backgroundColor: "rgba(0, 0, 0, 0.5)",
         }}
       >
-        <motion.div
-          className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 px-8 sm:px-6 relative z-10"
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 100 }}
-          transition={{ duration: 1 }}
-        >
+        <motion.div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 px-8 sm:px-6 relative z-10">
           {/* Imagens */}
           <div className="w-full md:w-1/2 flex justify-center md:justify-start items-start flex-wrap gap-4">
             <img
@@ -168,10 +162,7 @@ function Home() {
           </div>
 
           {/* Texto */}
-          <div
-            id="quemsomos"
-            className="w-full md:w-1/2 text-left px-2 md:px-4 py-6"
-          >
+          <div className="w-full md:w-1/2 text-left px-2 md:px-4 py-6">
             <h2 className="text-3xl font-bold text-white text-center md:text-left">
               QUEM SOMOS
             </h2>
@@ -197,9 +188,14 @@ function Home() {
               complexos, estamos aqui para ajudar!
             </p>
             <div className="flex justify-center md:justify-start">
-              <Button className="mt-6 bg-blue-700 text-white px-6 py-2 rounded-lg">
-                Saiba Mais
-              </Button>
+              <a
+                href="/sobrenos"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-10 inline-block  text-black px-6 py-2 bg-yellow-500 hover:bg-yellow-600  font-bold  rounded-full shadow-lg transition duration-300 transform hover:scale-105"
+              >
+                Saiba mais
+              </a>
             </div>
           </div>
         </motion.div>

@@ -14,7 +14,13 @@ function Navbar() {
         {/* Menu de Navegação */}
         <div className="flex flex-col md:flex-row items-center gap-4">
           <a
-            href="#quemsomos"
+            href="/"
+            className="font-montserrat text-base font-bold hover:text-[#ead533]"
+          >
+            Home
+          </a>
+          <a
+            href="/sobrenos"
             className="font-montserrat text-base font-bold hover:text-[#ead533]"
           >
             Sobre nós

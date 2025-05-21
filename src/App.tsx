@@ -3,6 +3,8 @@ import Home from "./pages/home";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import Servicos from "./pages/Servicos";
+import SobreNos from "./pages/sobrenos";
+import FooterCriador from "./components/footer/FooterCriador";
 
 const App = () => {
   return (
@@ -26,9 +28,11 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/servicos" element={<Servicos />} />
+            <Route path="/sobrenos" element={<SobreNos />} />
           </Routes>
         </div>
         <Footer />
+        <FooterCriador />
       </BrowserRouter>
     </>
   );
