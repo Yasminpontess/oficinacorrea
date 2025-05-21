@@ -5,15 +5,15 @@ function Footer() {
       <div className="border-t border-white w-full" />
 
       <div className="flex justify-center items-center py-4">
-        <div className="max-w-[1440px] w-full flex justify-center px-6">
-          {/* Logo e texto lado a lado */}
-          <div className="flex flex-row items-center gap-x-4 text-center">
+        <div className="max-w-[1440px] w-full flex justify-center px-4 sm:px-6">
+          {/* Logo e texto lado a lado no desktop, empilhados no mobile */}
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-x-4 text-center sm:text-left">
             <img
               src="/imagens/2.png"
               alt="Logo Corrêa"
-              className="h-10 md:h-16"
+              className="h-10 sm:h-14"
             />
-            <h1 className="text-sm md:text-base whitespace-nowrap">
+            <h1 className="text-xs sm:text-sm md:text-base">
               Oficina Corrêa 83 © Todos os direitos reservados | Desenvolvido
               por Yasmin Pontes - Desenvolvedora Web
             </h1>
