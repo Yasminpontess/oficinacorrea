@@ -1,6 +1,11 @@
 import { Link } from "react-router-dom";
 
 function Navbar() {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  function gtag_report_conversion(arg0: string): void {
+    throw new Error("Function not implemented.");
+  }
+
   return (
     <div className="w-full bg-black text-white py-4">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
@@ -36,7 +41,10 @@ function Navbar() {
 
           <a
             href="https://wa.me/5511992402147"
-            className="bg-amber-400 text-black font-bold px-4 py-2 rounded-lg hover:bg-amber-500 transition duration-200 text-sm "
+            onClick={() =>
+              gtag_report_conversion("https://wa.me/5511992402147")
+            }
+            className="bg-amber-400 text-black font-bold px-4 py-2 rounded-lg hover:bg-amber-500 transition duration-200 text-sm"
           >
             Agende nossos serviços
           </a>
